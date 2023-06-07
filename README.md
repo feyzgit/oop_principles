@@ -22,7 +22,7 @@ NYP teorisinde 4 temel özelliğin gerçekleştirilmesi zorunlu sayılmıştır 
 - Miras Alma (Inheritance) Bir nesnenin özelliklerinin başka nesneler tarafından kullanılması,
 - Çok Biçimlilik (Polymorphism) nesneyi farklı şekilde işleme yeteneği.
 
-1-Abstraction(Soyutlama):
+1) Abstraction(Soyutlama):
 Detayların, karmaşıklığın azaltılması anlamına gelmektedir.Bir nesnenin neleri içermesi gerektiğine odaklanmayı ve önemli bilgileri gösterirken istenmeyen ayrıntıları gizlemeyi amaçlar. 
 Büyük projelerde yapılan çalışmaların hepsini bilmek gereksizdir.
 Projelerin detaylarında kaybolmak yerine işlevleri göstermeye odaklanmak projeyi daha iyi anlamamızı sağlar.
@@ -31,5 +31,7 @@ Veri soyutlama, belirli ayrıntıları gizleme ve kullanıcıya yalnızca gerekl
 
 - Soyut Sınıflar (Abstract Classes): Bu sınıf, sınıf tanımında anahtar kelime veya değiştirici özetiyle işaretlenen en az bir soyut yöntem içermelidir. Abstract sınıfları, genellikle sınıf hiyerarşisinde bir temel sınıfı tanımlamak için kullanılır.
 - Arayüzler (Interfaces): Arayüz, arayüzü miras alan tüm sınıfların izlemesi gereken sözdizimsel bir sözleşme olarak tanımlanır. Bir arayüz, yalnızca soyut yöntemler ve özellikler içerebilen tamamen "soyut bir sınıftır".
+
+[https://github.com/feyzgit/oop_principles/blob/main/abstraction
 
 
