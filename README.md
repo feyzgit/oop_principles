@@ -4,7 +4,7 @@ OOP’ın Açılımı Nesne yönelimli programlama (NYP), (İngilizce: Object �
 
 Nesne yönelimi, anlaşılmasını, bakımını ve yeniden kullanımını kolaylaştırmak için yazılım tasarımını basitleştirir. Nesne Yönelimli Programlama (OOP), yazılım yazarken farklı bir düşünme biçimini temsil eder. OOP'nin güzelliği basitliğinde yatmaktadır. OOP'nin ifade gücü, kaliteli yazılım bileşenlerinin zamanında teslim edilmesini kolaylaştırır.
 
--Özellikler	          - Prosedür Odaklı yaklaşım	                  - Nesne Yönelimli yaklaşım
+- Özellikler	          - Prosedür Odaklı yaklaşım	                  - Nesne Yönelimli yaklaşım
 - vurgu	               Vurgu görevler üzerindedir.	                 Vurgu, bu görevleri yapan şeyler üzerindedir.
 - modülerleştirme	     Programlar, işlevler olarak bilinen           Programlar, sınıflar ve nesneler halinde düzenlenir ve işlevsellikler, bir sınıfın yöntemlerine gömülür.
                        daha küçük programlara bölünebilir.	         Veriler gizlenebilir ve dış kaynaklar tarafından erişilemez.
