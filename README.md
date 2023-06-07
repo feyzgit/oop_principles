@@ -22,7 +22,7 @@ NYP teorisinde 4 temel özelliğin gerçekleştirilmesi zorunlu sayılmıştır 
 - Miras Alma (Inheritance) Bir nesnenin özelliklerinin başka nesneler tarafından kullanılması,
 - Çok Biçimlilik (Polymorphism) nesneyi farklı şekilde işleme yeteneği.
 
-1) Abstraction(Soyutlama):
+# 1) Abstraction(Soyutlama):
 Detayların, karmaşıklığın azaltılması anlamına gelmektedir.Bir nesnenin neleri içermesi gerektiğine odaklanmayı ve önemli bilgileri gösterirken istenmeyen ayrıntıları gizlemeyi amaçlar. 
 Büyük projelerde yapılan çalışmaların hepsini bilmek gereksizdir.
 Projelerin detaylarında kaybolmak yerine işlevleri göstermeye odaklanmak projeyi daha iyi anlamamızı sağlar.
@@ -32,6 +32,23 @@ Veri soyutlama, belirli ayrıntıları gizleme ve kullanıcıya yalnızca gerekl
 - Soyut Sınıflar (Abstract Classes): Bu sınıf, sınıf tanımında anahtar kelime veya değiştirici özetiyle işaretlenen en az bir soyut yöntem içermelidir. Abstract sınıfları, genellikle sınıf hiyerarşisinde bir temel sınıfı tanımlamak için kullanılır.
 - Arayüzler (Interfaces): Arayüz, arayüzü miras alan tüm sınıfların izlemesi gereken sözdizimsel bir sözleşme olarak tanımlanır. Bir arayüz, yalnızca soyut yöntemler ve özellikler içerebilen tamamen "soyut bir sınıftır".
 
-https://github.com/feyzgit/oop_principles/blob/main/abstraction
+https://github.com/feyzgit/oop_principles/blob/main/abstract.abap
+
+# 2) Encapsulation(Kapsülleme):
+Encapsulation, kapsülleme anlamına gelir.Bu sistem kod ile datayı birbirine entegre eden bir mekanizmadır. Encapsulation (Kapsülleme), nesne yönelimli olan programlamada yer alan herhangi bir nesnenin yöntemlerini, değişkenlerini ve özelliklerini diğer nesnelerden saklayarak, bunlara erişimini sınırlandırır.  Bunun sonucunda ise yanlış kullanımlardan koruyan farklı bir konsepttir.
+
+Kapsülleme, bir nesnenin içeriğinin ve davranışının diğer nesnelerden gizlenmesini sağlar. Bir nesne, içerideki verilere (alanlar veya özellikler) ve bu veriler üzerinde çalışan işlevlere (metodlar veya fonksiyonlar) sahiptir. Kapsülleme, nesnenin iç yapısının dışarıdan erişime kapalı olmasını ve yalnızca tanımlanan arayüz veya yöntemler aracılığıyla etkileşime izin verilmesini sağlar.
+
+Bu durum, nesnenin iç detaylarının dışarıya sızmasını önler ve nesnenin nasıl kullanılacağını veya çalıştığını bilmeden sadece kullanımına odaklanılmasını sağlar. Bu da kodun daha modüler, sürdürülebilir ve yeniden kullanılabilir olmasını sağlar.
+
+Instance methodlar, bir nesneye özgüdür ve obje üzerinden çağrılırlar. Bu nedenle, bir nesne oluşturduğunuzda (sınıfın bir örneğini aldığınızda) instance methodlara bu nesne üzerinden erişebilirsiniz. Aynı zamanda, instance methodlar içerisinde sınıfın diğer instance verilerine ve methodlarına erişebilirsiniz. Bunun için nesneyi temsil eden referansı kullanarak nesne->method() şeklinde erişebilirsiniz.
+
+Static methodlar ise sınıf düzeyinde tanımlanır ve sınıfın bir örneği olmadan doğrudan sınıf adıyla çağrılırlar. Static methodlar, sınıfın verilerine doğrudan erişemezler, çünkü sınıfın herhangi bir örneğiyle bağlantılı değillerdir. Ancak, static methodlar sadece sınıfın içindeki static verilere ve diğer static methodlara erişebilirler. Bu nedenle, bir static methodu sınıf adıyla çağırabilirsiniz: sınıf->staticMethod().
+
+https://github.com/feyzgit/oop_principles/blob/main/encapsulation.abap
+
+ 
+
+
 
 
