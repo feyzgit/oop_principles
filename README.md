@@ -32,6 +32,6 @@ Veri soyutlama, belirli ayrıntıları gizleme ve kullanıcıya yalnızca gerekl
 - Soyut Sınıflar (Abstract Classes): Bu sınıf, sınıf tanımında anahtar kelime veya değiştirici özetiyle işaretlenen en az bir soyut yöntem içermelidir. Abstract sınıfları, genellikle sınıf hiyerarşisinde bir temel sınıfı tanımlamak için kullanılır.
 - Arayüzler (Interfaces): Arayüz, arayüzü miras alan tüm sınıfların izlemesi gereken sözdizimsel bir sözleşme olarak tanımlanır. Bir arayüz, yalnızca soyut yöntemler ve özellikler içerebilen tamamen "soyut bir sınıftır".
 
-[https://github.com/feyzgit/oop_principles/blob/main/abstraction
+https://github.com/feyzgit/oop_principles/blob/main/abstraction
 
 
