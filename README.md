@@ -45,9 +45,44 @@ Instance methodlar, bir nesneye özgüdür ve obje üzerinden çağrılırlar. B
 
 Static methodlar ise sınıf düzeyinde tanımlanır ve sınıfın bir örneği olmadan doğrudan sınıf adıyla çağrılırlar. Static methodlar, sınıfın verilerine doğrudan erişemezler, çünkü sınıfın herhangi bir örneğiyle bağlantılı değillerdir. Ancak, static methodlar sadece sınıfın içindeki static verilere ve diğer static methodlara erişebilirler. Bu nedenle, bir static methodu sınıf adıyla çağırabilirsiniz: sınıf->staticMethod().
 
+Bir objeye erişip erişemeyeceğiniz, objenin içindeki veri veya yöntemin erişim düzeyine bağlıdır. Private erişim düzeyine sahip veri ve yöntemlere objeden doğrudan erişilemezken, public erişim düzeyine sahip olanlara erişebilirsiniz. Protected erişim düzeyine sahip veri ve yöntemler ise sınıftan kalıtım alan alt sınıflardan erişilebilir, ancak doğrudan objeden erişilemezler. Bu şekilde, kapsülleme objenin iç yapısını koruyarak, doğrudan erişimin sınırlanmasını sağlar.
+
 https://github.com/feyzgit/oop_principles/blob/main/encapsulation.abap
 
- 
+# 3) Inheritance(Miras Alma)
+Inheritance (Kalıtım), bir nesne yönelimli programlama (OOP) kavramıdır ve bir sınıfın diğer bir sınıftan özelliklerini ve davranışlarını miras almasını sağlar. Bir sınıfın başka bir sınıftan kalıtım yapması, mevcut sınıfın özelliklerini (verileri) ve davranışlarını (metotları) miras alan yeni bir alt sınıf (türetilmiş sınıf veya çocuk sınıf) oluşturulmasını sağlar.
+
+Kalıtım, OOP'nin temel prensiplerinden biri olan "code reusability" (kod yeniden kullanılabilirliği) ilkesini destekler. Bu sayede, mevcut bir sınıfta tanımlanan verileri ve yöntemleri başka bir sınıfta tekrar tanımlamak yerine, kalıtım kullanarak bu özellikleri yeniden kullanabilir ve mevcut sınıfın üzerine ek özellikler veya davranışlar ekleyebilirsiniz.
+
+Kalıtım ilişkisinde, üst sınıf (ana sınıf, temel sınıf veya ebeveyn sınıf) ve alt sınıf (türetilmiş sınıf, alt sınıf veya çocuk sınıf) arasında bir ilişki vardır. Alt sınıf, üst sınıftan kalıtım yoluyla özellikleri ve davranışları miras alır ve bunları kullanabilir veya değiştirebilir.
+
+Kalıtımın avantajları şunlardır:
+- Kodun tekrar kullanılabilirliği: Var olan bir sınıfın özelliklerini ve davranışlarını yeni bir sınıfta tekrar tanımlamak yerine, kalıtım kullanarak mevcut kodu yeniden kullanabilirsiniz.
+- Kod organizasyonu: İlgili sınıfları bir hiyerarşi içinde düzenlemek, kodun daha iyi organize edilmesini sağlar.
+- Kod genişletilebilirliği: Alt sınıflar, üst sınıflardan miras aldıkları özellikleri değiştirip genişletebilir veya yeni özellikler ekleyebilirler.
+- Polimorfizm: Kalıtım sayesinde, bir üst sınıfa ait bir nesneyi, alt sınıflardan biri gibi kullanabilir ve farklı davranışlar sergileyebilirsiniz.
+Kalıtım, nesne yönelimli programlamada güçlü bir kavramdır ve sınıf hiyerarşileri oluşturarak kodun daha esnek, sürdürülebilir ve ölçeklenebilir olmasını sağlar.
+
+https://github.com/feyzgit/oop_principles/blob/main/inheritance.abap
+
+# 4)  Polymorphism(Çok Biçimlilik)
+Nesne yönelimli programlama dillerinde çok biçimlilik özelliği ise aynı temel sınıftan türetilmiş olan sınıflarda paylaşılan, başka bir ifadeyle aşırı yüklenen aynı metodun bu sınıflarda farklı şekillerde uyarlanabilmesidir.
+
+Polimorfizmin amacı, genel bir sınıf belirtip aynı arayüzü kullanarak oluşabilecek karmaşıklığı azaltmaktır. Bir metodun farklı nesnelerde veya farklı ortamlarda farklı sonuçlar üretmesidir.
+
+Polimorfizm, bir nesnenin farklı tipleriyle aynı şekilde davranabilme yeteneğini ifade eder. Aynı isme sahip olan farklı metotların, farklı sınıflardan türetilmiş nesneler üzerinde farklı şekillerde çalışabilmesini sağlar.
+
+Polimorfizm, programın esnekliğini ve genişletilebilirliğini artıran önemli bir özelliktir. Bir nesne üzerinde polimorfik bir davranış sergilemek, programcının daha az kod yazmasına ve kodun daha anlaşılır ve sürdürülebilir olmasına olanak sağlar.
+
+Polimorfizm, iki farklı şekilde gerçekleştirilebilir:
+
+Statik Polimorfizm (Static Polymorphism): Aynı isme sahip olan farklı metotların parametre sayıları, tipleri veya sırası gibi derleme zamanında belirlenen özelliklerine dayanarak farklı şekillerde çalışmasını ifade eder. Statik polimorfizm, aşırı yüklenmiş (overloaded) metotları kullanarak gerçekleştirilir.
+
+Dinamik Polimorfizm (Dynamic Polymorphism): Farklı sınıflar arasında miras (inheritance) ilişkisi kullanılarak gerçekleştirilen polimorfizm türüdür. Alt sınıfların, üst sınıfın metotlarını yeniden tanımlayarak (override) farklı davranışlar sergilemelerini sağlar. Bu şekilde, üst sınıf referansı üzerinden alt sınıfların metotlarına erişilebilir ve nesnenin gerçek türüne göre uygun metot çalıştırılır.
+
+Polimorfizm, nesne yönelimli programlamanın güçlü bir özelliğidir ve kodun daha esnek, sürdürülebilir ve genişletilebilir olmasını sağlar. Aynı isim altında farklı davranışlar sergileyen metotlar sayesinde kod yeniden kullanılabilirliği artar ve daha genel ve soyut bir şekilde programlama yapılabilir.
+
+https://github.com/feyzgit/oop_principles/blob/main/polimorfizm.abap 
 
 
 
